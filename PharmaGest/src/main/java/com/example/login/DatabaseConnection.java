@@ -7,7 +7,7 @@ public class DatabaseConnection {
     public Connection databaselink;
 
     public Connection getConnection(){
-        String databaseName = "TestLogin";
+        String databaseName = "pharmagestDB";
         String databaseUser = "postgres";
         String databasePassword = "postgres2505";
         String url = "jdbc:postgresql://localhost:5432/" + databaseName;

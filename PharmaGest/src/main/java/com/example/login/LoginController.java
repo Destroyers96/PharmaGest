@@ -49,8 +49,8 @@ public class LoginController {
     public void validateLogin(){
         DatabaseConnection connectNow = new DatabaseConnection();
         Connection connectDB = connectNow.getConnection();
-        String verifyLogin = "SELECT COUNT(0) FROM public.\"Utilisateurs\"\n" +
-                "WHERE \"UserName\" ='" + usernameTextField.getText() + "' AND \"Password\" = '" + passwordPasswordField.getText() + "';";
+        String verifyLogin = "SELECT COUNT(0) FROM public.\"utilisateur\"\n" +
+                "WHERE \"identifiant\" ='" + usernameTextField.getText() + "' AND \"mot_de_passe\" = '" + passwordPasswordField.getText() + "';";
         try{
             Statement statement = connectDB.createStatement();
             ResultSet queryResult = statement.executeQuery(verifyLogin);

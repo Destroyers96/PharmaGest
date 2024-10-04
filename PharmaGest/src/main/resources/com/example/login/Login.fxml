@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="425.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.login.LoginController">
+   <right>
+      <AnchorPane prefHeight="525.0" prefWidth="425.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="167.0" layoutY="221.0" text="Secure Login" textFill="#2e2e2e" underline="true">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Label>
+            <Label layoutX="96.0" layoutY="291.0" text="Username">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="98.0" layoutY="337.0" text="Password">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameTextField" layoutX="168.8" layoutY="286.2" promptText="Entrez votre username">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="passwordPasswordField" layoutX="168.0" layoutY="332.0" prefHeight="20.0" prefWidth="163.0" promptText="Entez votre password">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </PasswordField>
+            <Button fx:id="loginButton" layoutX="109.0" layoutY="405.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: #0995a2;" text="Login" textFill="WHITE" />
+            <Button fx:id="cancelButton" layoutX="242.0" layoutY="405.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: gray;" text="Cancel" textFill="WHITE" />
+            <Label fx:id="loginMessageLabel" alignment="CENTER" layoutX="71.0" layoutY="254.0" prefHeight="18.0" prefWidth="284.0" textFill="RED" />
+            <Label layoutX="132.0" layoutY="25.0" text="PharmaGest" textFill="#60b65d">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="137.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PharmaGest_logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="212.0" layoutY="512.0" text="Copyright ©. Tous Droits Réservés. 2024.">
+               <font>
+                  <Font name="Verdana" size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
